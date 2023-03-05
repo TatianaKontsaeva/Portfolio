@@ -1,38 +1,48 @@
+@font-face {
+      font-family: "Poppins";
+      src: url(./Poppins/Poppins-Regular.ttf);
+ }
  * {
-    margin: 0;
-    padding: 0;
+      margin: 0;
+      padding: 0;
+ }
+ .container {
+      max-width: 1140px;
+      margin: 0 auto;
  }
  body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #432F3F;
+      font-family: "Poppins";
+      color: #432F3F;
  }
- .header {
-    background-color: #432F3F;
-    display: flex;
-    flex-direction: row;
+ .header-main {
+      background-color: #432F3F;
+}
+.header-main_wrap {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
 }
 
  .header-title {
-    color: aliceblue;
-    font-size: 45px;
+      color: aliceblue;
+      font-size: 45px;
+      padding-left: 100px;
  }
  .header-text {
-    color: aliceblue;
-    font-size: 24px;
+      color: aliceblue;
+      font-size: 24px;
+      padding-left: 100px;
  }
 
  .header-img {
-    border-radius: 50%;
-    display: flex;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+      border-radius: 50%;
+      display: flex;
+      padding-top: 50px;
+      padding-bottom: 50px;
  }
  .header-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+      display: flex;
+      flex-direction: column;
 }
  .objective-title, 
  .experience-title, 
@@ -40,10 +50,10 @@
  .language-title,
  .form-title, 
  .contacts-title {
-    font-size: 20px;
+      font-size: 20px;
 }
  .form-subtitle {
-    font-size: 16px;
+      font-size: 16px;
 }
 
  .objective, 
@@ -52,14 +62,12 @@
  .language, 
  .form, 
  .contacts {
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
 
  }
  .objective-title{
-    padding-top: 50px;
+      padding-top: 50px;
  }
 
  .objective-text {
@@ -108,7 +116,6 @@
 }
 
  .form {
-    background-color: #E8D5D1;
     padding-left: 50px;
     padding-top: 50px;
     padding-right: 50px;
@@ -130,6 +137,11 @@
  .form-input {
     width: 250px;
  }
+ .form-input::placeholder,
+ .form-textarea::placeholder {
+   font-family: "Poppins";
+   font-size: 14px;
+ }
  .form-content {
     display: flex;
     flex-direction: row;
@@ -150,10 +162,12 @@
  }
 
  .footer {
-    background-color: #432F3F;
+   background-color: #E8D5D1;
     color: #E8D5D1;
  }
-
+ .contacts {
+   background-color: #432F3F;
+ }
  .contacts-link {
     color: #E8D5D1;
     text-decoration: none;
@@ -165,6 +179,7 @@
 
  .footer-text {
     color: #ad94b5;
+    padding-top: 50px;
  }
  .footer{
     text-align: center;
